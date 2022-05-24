@@ -31,16 +31,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Paytone+One&display=swap" rel="stylesheet">
 
   <script src="scripts/main.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="LIEN ACCUEIL"><img src="IMG LOGO" alt="logo bateau papier lifeboat"></a></li>
-        <li><a href="LIEN ACCUEIL">Lifeboat</a></li>
-        <li><button class="switch"><!-- BTN DARK MODE ICI --></button></li>
+      <ul class="navflex">
+        <li>
+          <a href="LIEN ACCUEIL">
+            <svg alt="logo bateau papier lifeboat" width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_61_61)">
+              <path d="M28 37.1895L44 47.656L55.8919 24.2808L28 37.1895Z" fill="white"/>
+              <path d="M27.7837 37.1895L11.7837 47.656L-0.108154 24.2808L27.7837 37.1895Z" fill="white"/>
+              <path d="M28.2162 0.20752L17.8962 33.0026L28.2162 37.5381L38.5946 32.6538L28.2725 0.322651" fill="white"/>
+              <path d="M11.7838 47.4817H44L28 37.0151L11.7838 47.4817Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_61_61">
+              <rect width="56" height="47.0994" fill="white" transform="translate(0 0.382324)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li><a class="titlenav" href="LIEN ACCUEIL">Lifeboat</a></li>
+        <li>
+          <button class="switch">
+            <svg width="40" height="43" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M39.6671 36.4965C37.4403 37.1377 35.0874 37.4812 32.6543 37.4812C18.6839 37.4812 7.3587 26.156 7.3587 12.1856C7.3587 7.76769 8.49125 3.61434 10.4819 0C4.16377 4.20257 0 11.3871 0 19.5441C0 32.4985 10.5016 43.0001 23.456 43.0001C29.7446 43.0001 35.4552 40.5253 39.6671 36.4965Z" fill="white"/>
+            </svg>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -48,15 +73,15 @@
   <main>
     <section>
       <h1>Tu as un projet web&nbsp;? Trouve ton équipage pour le mener à&nbsp;bien&nbsp;!</h1>
-      <button>Envoie ta bouteille à la&nbsp;mer&nbsp;!</button>
+      <button class="call-to-action">Envoie ta bouteille à la&nbsp;mer&nbsp;!</button>
     </section>
 
     <section>
-      <h2>Terminés les projets&nbsp;abandonnés</h2>
+      <h2 class="title">Terminés les projets&nbsp;abandonnés</h2>
       <h3>... parce qu’on ne trouve pas de coéquipiers avec qui les&nbsp;réaliser.</h3>
-      <p>Lifeboat te met en relation avec d’autres créateurs digitaux. Publie ton projet, sélectionne tes mots-clés et lance ta bouteille à la mer&nbsp;! HTML, CSS, JavaScript, UI/UX design, storytelling... Qui sait, de valeureux pirates pourraient bien posséder les compétences que tu&nbsp;recherches...</p>
+      <p>Lifeboat te met en relation avec d’autres créateurs digitaux. Publie ton projet, sélectionne tes mots-clés et lance ta bouteille à la mer&nbsp;! HTML, CSS, JavaScript, UI/UX design, storytelling... Qui sait, de futurs compagnons pourraient bien posséder les compétences que tu&nbsp;recherches...</p>
       <img src="assets/images/mockup-white.png" 
-        srcset="assets/images/mockup-white@2x.png 2x" alt="un écran de l'application lifeboat">
+        srcset="assets/images/mockup-white@2x.png 2x" alt="un écran de l'application mobile Lifeboat" class="mockup">
     </section>
 
     <section>
@@ -73,23 +98,26 @@
 
     <section>
       <h2>“The journey&nbsp;begins!”</h2>
-      <video controls width="250">
+      <figure>
+        <video controls width="250">
 
-        <source src="/media/cc0-videos/flower.webm"
-                type="video/webm">
-    
-        <source src="/media/cc0-videos/flower.mp4"
-                type="video/mp4">
-    
-        Sorry, your browser doesn't support embedded videos.
-    </video>
+          <source src="/media/cc0-videos/flower.webm"
+                  type="video/webm">
+      
+          <source src="/media/cc0-videos/flower.mp4"
+                  type="video/mp4">
+      
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <figcaption>Fonctionnement de l'application mobile&nbsp;Lifeboat.</figcaption>
+      </figure>
     </section>
 
     <section>
       <ul>
-        <li><img src="IMG PROFIL" alt="photo de profil d'un premier utilisateur de lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un premier utilisateur de lifeboat"><h4>Roland</h4><p>Plus jamais sans mon&nbsp;radeau</p></li>
-        <li><img src="IMG PROFIL" alt="photo de profil d'un deuxième utilisateur de lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un deuxième utilisateur de lifeboat"><h4>Cheylard</h4><p>Génial pour trouver des nouvelles relations. Je&nbsp;recommande</p></li>
-        <li><img src="IMG PROFIL" alt="photo de profil d'un troisième utilisateur de lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un troisème utilisateur de lifeboat"><h4>AngryPom</h4><p>On dirait un tequila&nbsp;sunrise</p></li>
+        <li><img src="IMG PROFIL" alt="photo de profil d'un premier utilisateur de Lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un premier utilisateur de Lifeboat"><h4>Roland</h4><p>Plus jamais sans mon&nbsp;radeau</p></li>
+        <li><img src="IMG PROFIL" alt="photo de profil d'un deuxième utilisateur de Lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un deuxième utilisateur de Lifeboat"><h4>Cheylard</h4><p>Génial pour trouver des nouvelles relations. Je&nbsp;recommande</p></li>
+        <li><img src="IMG PROFIL" alt="photo de profil d'un troisième utilisateur de Lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un troisème utilisateur de Lifeboat"><h4>AngryPom</h4><p>On dirait un tequila&nbsp;sunrise</p></li>
       </ul>
     </section>
   </main>
@@ -97,12 +125,12 @@
   <footer>
     <ul>
       <li><a href="LIEN ACCUEIL">Lifeboat</a></li>
-      <li><a href="LIEN ACCUEIL">Agathe Mazur</a></li>
+      <li><a href="LIEN ACCUEIL">Agathe&nbsp;Mazur</a></li>
     </ul>
 
     <ul>
       <li><a href="LIEN SITE DWT"><!-- SVG DWT -->DWT</a></li>
-      <li><a href="LIEN CASE STUDY">Case study</a></li>
+      <li><a href="LIEN CASE STUDY">Case &nbsp;tudy</a></li>
     </ul>
   </footer>
 

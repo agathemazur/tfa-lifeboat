@@ -2,6 +2,116 @@
 @import 'utils/variables';
 @import 'components/type';
 
-.school-img {
-    width: 320px;
+:root{
+    --font-title: 'Paytone One', sans-serif;
+    --font-text: 'Cousine', monospace;
+    --color-text: #202020;
+    --color-bg: #ffffff;
+    --gradient-bg: linear-gradient(180deg, rgba(255,126,54,1) 0%, rgba(241,206,80,1) 13%, rgba(241,206,80,1) 78%, rgba(255,126,54,1) 100%);
+    --gradient-title1: linear-gradient(150.35deg, #632CFF 0%, #1507FF 50%, #00D4FF 100%);
+}
+
+[data-theme="dark"]{
+    --colo-bg:#000;
+}
+
+[data-theme="light"]{
+    --colo-bg:#fff;
+}
+
+/* ========================================== BODY ========================================== */
+
+body{
+    background: rgb(255,126,54);
+    background: var(--gradient-bg);
+
+    .titlenav{
+        font-family: var(--font-title);
+        text-decoration: none;
+    }
+
+    ul{
+        padding:0;
+
+        li{
+            list-style: none;
+        }
+    }
+
+    section{
+        width: 100%;
+        font-family: var(--font-text);
+    }
+}
+
+/* ========================================== HEADER ========================================== */
+
+header{
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    button{
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    a{ 
+        color: var(--color-bg);
+    }
+
+}
+
+/* ========================================== BUTTON CALL-TO-ACTION ========================================== */
+
+.call-to-action{
+    background-color: var(--color-bg);
+    border: 3px solid var(--color-text);
+    border-radius: 5px;
+    width:240px;
+    margin: auto;
+
+    ::before{
+        content: "";
+        background: var(--color-text);
+        top: 10px;
+        left: -15px;
+        height: 100%;
+        width: 15px;
+    }
+}
+
+/* ========================================== TITLES ========================================== */
+
+h1{
+    font-family: var(--font-title);
+    color: var(--color-bg);
+    text-align: center;
+    margin: 10vw;
+}
+
+.title{
+    background: var(--gradient-title1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-title);
+}
+
+
+/* ========================================== PICTURES ========================================== */
+
+.mockup{
+    max-width: 100%;
+}
+
+
+/* ========================================== MEDIA QUERIES ========================================== */
+
+
+@media (min-width: 1050px){
+
 }
