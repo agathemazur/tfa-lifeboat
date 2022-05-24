@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <title>Agathe Mazur - DWT - Lifeboat</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="description" content="">
-  <!-- Meta Partage -->
-  <!-- Favicon -->
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MazurAgathe" >
+  <meta name="twitter:creator" content="@MazurAgathe" >
+  <meta name="twitter:title" content="Agathe Mazur - DWT - Lifeboat" >
+  <meta name="twitter:description" content="Travail de fin d'année d'une étudiante en Design Web & Transmédia, à la Haute École Albert Jacquard" >
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image" content="https://www.agathemazur.fr/assets/images/img-meta.png" > <!-- IMAGE META ICI -->
+
+          <!-- Open Graph data -->
+  <meta property="og:site_name" content="Agathe Mazur - DWT - Lifeboat" />
+  <meta property="og:title" content="Agathe Mazur - DWT - Lifeboat" />
+  <meta property="og:description" content="Travail de fin d'année d'une étudiante en Design Web & Transmédia, à la Haute École Albert Jacquard" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.agathemazur.fr/" /> <!-- METTRE LA BONNE URL DU TFA ICI -->
+  <meta property="og:image" content="https://www.agathemazur.fr/assets/images/img-meta.png" /> <!-- IMAGE META ICI -->
+  <meta property="og:image:width" content="1800">
+  <meta property="og:image:height" content="945">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" /> <!-- METTRE FAVICON ICI -->
+  <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" /> <!-- METTRE FAVICON ICI -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
@@ -16,16 +36,75 @@
 </head>
 <body>
   <header>
-    <a href="LIEN ACCUEIL"><img src="IMG LOGO" alt="logo bateau papier lifeboat"></a>
-    <a href="LIEN ACCUEIL">Lifeboat</a>
     <nav>
       <ul>
-        <li><a href="LIEN ACCUEIL">Accueil</a></li>
-        <li><a href="LIEN PROTOTYPE">Tester l'app</a></li>
+        <li><a href="LIEN ACCUEIL"><img src="IMG LOGO" alt="logo bateau papier lifeboat"></a></li>
+        <li><a href="LIEN ACCUEIL">Lifeboat</a></li>
+        <li><button class="switch"><!-- BTN DARK MODE ICI --></button></li>
       </ul>
     </nav>
   </header>
-  <h1>Hello world</h1>
+
+  <main>
+    <section>
+      <h1>Tu as un projet web&nbsp;? Trouve ton équipage pour le mener à&nbsp;bien&nbsp;!</h1>
+      <button>Envoie ta bouteille à la&nbsp;mer&nbsp;!</button>
+    </section>
+
+    <section>
+      <h2>Terminés les projets&nbsp;abandonnés</h2>
+      <h3>... parce qu’on ne trouve pas de coéquipiers avec qui les&nbsp;réaliser.</h3>
+      <p>Lifeboat te met en relation avec d’autres créateurs digitaux. Publie ton projet, sélectionne tes mots-clés et lance ta bouteille à la mer&nbsp;! HTML, CSS, JavaScript, UI/UX design, storytelling... Qui sait, de valeureux pirates pourraient bien posséder les compétences que tu&nbsp;recherches...</p>
+      <img src="assets/images/mockup-white.png" 
+        srcset="assets/images/mockup-white@2x.png 2x" alt="un écran de l'application lifeboat">
+    </section>
+
+    <section>
+      <h2>De nombreux projets ont besoin de&nbsp;toi&nbsp;!</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+       </div>
+    </section>
+
+    <section>
+      <h2>“The journey&nbsp;begins!”</h2>
+      <video controls width="250">
+
+        <source src="/media/cc0-videos/flower.webm"
+                type="video/webm">
+    
+        <source src="/media/cc0-videos/flower.mp4"
+                type="video/mp4">
+    
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+    </section>
+
+    <section>
+      <ul>
+        <li><img src="IMG PROFIL" alt="photo de profil d'un premier utilisateur de lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un premier utilisateur de lifeboat"><h4>Roland</h4><p>Plus jamais sans mon&nbsp;radeau</p></li>
+        <li><img src="IMG PROFIL" alt="photo de profil d'un deuxième utilisateur de lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un deuxième utilisateur de lifeboat"><h4>Cheylard</h4><p>Génial pour trouver des nouvelles relations. Je&nbsp;recommande</p></li>
+        <li><img src="IMG PROFIL" alt="photo de profil d'un troisième utilisateur de lifeboat"><img src="IMG NOTES ETOILES" alt="la note d'un troisème utilisateur de lifeboat"><h4>AngryPom</h4><p>On dirait un tequila&nbsp;sunrise</p></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="LIEN ACCUEIL">Lifeboat</a></li>
+      <li><a href="LIEN ACCUEIL">Agathe Mazur</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="LIEN SITE DWT"><!-- SVG DWT -->DWT</a></li>
+      <li><a href="LIEN CASE STUDY">Case study</a></li>
+    </ul>
+  </footer>
 
 </body>
 </html>
