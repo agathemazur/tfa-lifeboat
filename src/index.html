@@ -39,11 +39,11 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul class="navflex">
+    <nav class="navflex">
+      <ul class="navleft">
         <li>
           <a href="LIEN ACCUEIL">
-            <svg alt="logo bateau papier lifeboat" width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg alt="logo bateau papier lifeboat" width="30" height="30" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_61_61)">
               <path d="M28 37.1895L44 47.656L55.8919 24.2808L28 37.1895Z" fill="white"/>
               <path d="M27.7837 37.1895L11.7837 47.656L-0.108154 24.2808L27.7837 37.1895Z" fill="white"/>
@@ -58,10 +58,14 @@
             </svg>
           </a>
         </li>
-        <li><a class="titlenav" href="LIEN ACCUEIL">Lifeboat</a></li>
+        <li>
+          <a class="titlenav" href="LIEN ACCUEIL">Lifeboat</a></li>
+        <li>
+      </ul>
+      <ul>
         <li>
           <button class="switch">
-            <svg width="40" height="43" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="20" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M39.6671 36.4965C37.4403 37.1377 35.0874 37.4812 32.6543 37.4812C18.6839 37.4812 7.3587 26.156 7.3587 12.1856C7.3587 7.76769 8.49125 3.61434 10.4819 0C4.16377 4.20257 0 11.3871 0 19.5441C0 32.4985 10.5016 43.0001 23.456 43.0001C29.7446 43.0001 35.4552 40.5253 39.6671 36.4965Z" fill="white"/>
             </svg>
           </button>
@@ -71,21 +75,21 @@
   </header>
 
   <main>
-    <section>
+    <section class="intro">
       <h1>Tu as un projet web&nbsp;? Trouve ton équipage pour le mener à&nbsp;bien&nbsp;!</h1>
       <a class="call-to-action"><span>Envoie ta bouteille à la&nbsp;mer&nbsp;!</span></a>
     </section>
 
-    <section>
-      <h2 class="title">Terminés les projets&nbsp;abandonnés</h2>
-      <h3>... parce qu’on ne trouve pas de coéquipiers avec qui les&nbsp;réaliser.</h3>
-      <p>Lifeboat te met en relation avec d’autres créateurs digitaux. Publie ton projet, sélectionne tes mots-clés et lance ta bouteille à la mer&nbsp;! HTML, CSS, JavaScript, UI/UX design, storytelling... Qui sait, de futurs compagnons pourraient bien posséder les compétences que tu&nbsp;recherches...</p>
+    <section class="explanation">
+      <h2 class="title">Terminés les projets abandonnés</h2>
+      <h3 class="sous-titre">... parce qu’on ne trouve pas de coéquipiers avec qui les&nbsp;réaliser.</h3>
+      <p class="sous-texte">Lifeboat te met en relation avec d’autres créateurs digitaux. Publie ton projet, sélectionne tes mots-clés et lance ta bouteille à la mer&nbsp;! HTML, CSS, JavaScript, UI/UX design, storytelling... Qui sait, de futurs compagnons pourraient bien posséder les compétences que tu&nbsp;recherches...</p>
       <img src="assets/images/mockup-white.png" 
         srcset="assets/images/mockup-white@2x.png 2x" alt="un écran de l'application mobile Lifeboat" class="mockup">
     </section>
 
-    <section>
-      <h2>De nombreux projets ont besoin de&nbsp;toi&nbsp;!</h2>
+    <section class="gallery">
+      <h2 class="title title--2">De nombreux projets ont besoin de&nbsp;toi&nbsp;!</h2>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -96,8 +100,8 @@
        </div>
     </section>
 
-    <section>
-      <h2>“The journey&nbsp;begins!”</h2>
+    <section class="journey">
+      <h2 class="title">“The journey&nbsp;begins!”</h2>
       <figure>
         <video controls width="250">
 
@@ -123,9 +127,10 @@
   </main>
 
   <footer>
-    <ul>
+    <ul class="left">
       <li><a href="LIEN ACCUEIL">Lifeboat</a></li>
       <li><a href="LIEN ACCUEIL">Agathe&nbsp;Mazur</a></li>
+      <li><a href="LIEN ACCUEIL"><!-- JS année -->Année en cours</a></li>
     </ul>
 
     <ul>
