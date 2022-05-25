@@ -24,6 +24,7 @@
 body{
     background: rgb(255,126,54);
     background: var(--gradient-bg);
+    font-size: 16px;
 
     .titlenav{
         font-family: var(--font-title);
@@ -68,20 +69,85 @@ header{
 
 /* ========================================== BUTTON CALL-TO-ACTION ========================================== */
 
+
+// .call-to-action{
+//     text-align: center;
+//     display: inline-block;
+//     cursor: pointer;
+//     background-color: var(--color-bg);
+//     border: 3px solid var(--color-text);
+//     border-radius: 5px;
+//     width:240px;
+//     height:80px;
+//     margin: auto;
+//     position: relative;
+
+//     span{
+//         display: inline-block;
+//         padding: 15px 20px 10px 20px;
+//         transform: translate(-6px, -6px);
+//         transition: transform .3s;
+
+//         &:hover{
+//             transform: translate(-3px, -3px);
+//         }
+//     }
+
+//     &:after{
+//         content:"";
+//         border-radius: 5px;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         left: 0;
+//         bottom: 0;
+//         z-index: -1;
+//         box-shadow: 10px 10px var(--color-text);
+//     }
+
 .call-to-action{
-    background-color: var(--color-bg);
-    border: 3px solid var(--color-text);
-    border-radius: 5px;
+    display: block;
+    font-family: var(--font-text);
     width:240px;
+    height:80px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color-text);
+    border: 3px solid var(--color-text);
+    text-align: center;
+    text-decoration: none;
+    position: relative;
     margin: auto;
 
-    ::before{
+    span{
+        background-color: var(--color-bg);
+        padding: 10px 20px 9px;
+        border: 3px solid var(--color-text);
+        color: var(--color-text);
+        display: block;
+        border-radius: 5px;
+        transform: translate(-6px, -6px);
+        transition: transform .3s;
+    }
+
+    &:after{
         content: "";
-        background: var(--color-text);
-        top: 10px;
-        left: -15px;
-        height: 100%;
-        width: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #000;
+        z-index: -1;
+    }
+
+    &:hover span,
+    &:focus span{
+        transform: translate(-3px, -3px);
+    }
+
+    &:active span{
+        transform: translate(0,0);
     }
 }
 
@@ -92,6 +158,9 @@ h1{
     color: var(--color-bg);
     text-align: center;
     margin: 10vw;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+    line-height: 50px;
 }
 
 .title{
@@ -112,6 +181,6 @@ h1{
 /* ========================================== MEDIA QUERIES ========================================== */
 
 
-@media (min-width: 1050px){
+// @media (min-width: 1050px){
 
-}
+// }
