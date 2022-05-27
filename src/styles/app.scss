@@ -29,6 +29,7 @@ body{
     background: rgb(255,126,54);
     background: var(--gradient-bg);
     font-size: 16px;
+    overflow-x: hidden;
 
     .titlenav{
         font-family: var(--font-title);
@@ -182,6 +183,58 @@ h4{
     // margin-bottom:30%;
     height: 90vh;
 }
+    // svg{
+    //     width:100vw;
+    //     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    //     transform: translate3d(0, 0, 0);
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+
+    .wave{
+        background: url(../assets/images/test.svg);  
+        background-repeat: repeat-x;
+        // background-size: 500px auto;
+        background-position: bottom;
+        position: absolute;
+        bottom: 0;
+        width: 200%;
+        height: 200px;
+        animation: wave 10s linear infinite;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: scaleY(1.2) translateX(-50%);
+          }
+
+          100% {
+            transform: scaleY(1.2) translateX(50%);
+          }
+
+        100% {
+          transform: scaleY(1.2) translateX(0%);
+        }
+}
+
+// @keyframes wave {
+//     0% {
+//       margin-left: 0;
+//     }
+//     100% {
+//       margin-left: -1600px;
+//     }
+//   }
+  
+//   @keyframes swell {
+//     0%, 100% {
+//       transform: translate3d(0,-25px,0);
+//     }
+//     50% {
+//       transform: translate3d(0,5px,0);
+//     }
+//   }
 
 /* ========================================== SECTION EXPLANATION ========================================== */
 
@@ -223,6 +276,25 @@ h4{
 .journey{
     background-color: var(--color-bg);
     height:70vh;
+
+    .howto{
+        padding:5px;
+        background: #FFFFFF;
+        border: 3px solid #000000;
+        border-radius: 5px;
+
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: 2px solid #000;
+            border-radius: 5px;
+            z-index: -1;
+        }
+    }
 }
 
 
@@ -277,5 +349,4 @@ footer{
 
 
 // @media (min-width: 1050px){
-
 // }
