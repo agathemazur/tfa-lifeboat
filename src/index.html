@@ -31,12 +31,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
+  <!-- <link rel="stylesheet" href="styles/darktheme.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Paytone+One&display=swap" rel="stylesheet">
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts/darktheme.js" defer></script>
   <script src="scripts/main.js" defer></script>
 </head>
 <body>
@@ -66,7 +68,7 @@
       </ul>
       <ul>
         <li>
-          <button class="switch">
+          <button class="btn btn--theme">
             <svg width="20" height="20" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M39.6671 36.4965C37.4403 37.1377 35.0874 37.4812 32.6543 37.4812C18.6839 37.4812 7.3587 26.156 7.3587 12.1856C7.3587 7.76769 8.49125 3.61434 10.4819 0C4.16377 4.20257 0 11.3871 0 19.5441C0 32.4985 10.5016 43.0001 23.456 43.0001C29.7446 43.0001 35.4552 40.5253 39.6671 36.4965Z" fill="white"/>
             </svg>
@@ -80,9 +82,6 @@
     <section class="intro">
         <h1>Tu as un projet web&nbsp;? Trouve ton équipage pour le mener à&nbsp;bien&nbsp;!</h1>
         <a class="call-to-action" href="https://www.figma.com/proto/5hm0kg9MudXKOqz42uROhY/MVP-LIFEBOAT?page-id=0%3A1&node-id=53%3A244&viewport=383%2C418%2C0.3&scaling=scale-down&starting-point-node-id=53%3A244" target="_blank"><span>Envoie ta bouteille à la&nbsp;mer&nbsp;!</span></a>
-        <!-- <div class="fixit">
-          <div class="wave"></div>
-        </div> -->
     </section>
 
     <section class="explanation">
@@ -216,7 +215,7 @@
     <ul class="left">
       <li><a href="#">Lifeboat</a></li>
       <li><a href="#">Agathe&nbsp;Mazur</a></li>
-      <li><!-- JS année -->Année en cours</li>
+      <li class="current-year">Année en cours</li>
     </ul>
 
     <ul class="right">

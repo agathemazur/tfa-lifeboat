@@ -1,5 +1,8 @@
 "use strict";
 
+var copyright = document.querySelector(".current-year");
+copyright.innerText = new Date().getFullYear();
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
