@@ -106,6 +106,14 @@ header{
         cursor: pointer;
         background: none;
         border: none;
+
+        .moon{
+            display:block;
+        }
+
+        .sun{
+            display: none;
+        }
     }
 
     a{ 
@@ -225,11 +233,12 @@ h4{
     background-color: var(--color-bg);
     position: relative;
     z-index: 20;
+    margin-bottom: 5em;
 
     &:before{
         content: "";
         display: block;
-        background: url('../assets/images/wave-test-crop.svg');
+        background: url('../assets/images/waves-top.svg');
         background-position: bottom;
         position: absolute;
         top: -120px;
@@ -267,9 +276,9 @@ h4{
         background:url('../assets/images/border-top.svg');
         background-position: bottom;
         position: absolute;
-        top: -108px;
-        background-size: contain;
-        left: -147px;
+        top: -199px;
+        background-size: cover;
+        left: -84px;
         width: 200%;
         height: 200px;
         z-index: -1;
@@ -330,30 +339,31 @@ h4{
                 background-position: top;
                 position: absolute;
                 z-index: -1;
-                top: -6em;
-                left: -16em;
+                top: -3em;
+                left: -18em;
                 width: 200%;
-                height: 195px;
+                height: 200px;
                 background-repeat: no-repeat;
         }
 
             &:after{
                 content: "";
                 background:url('../assets/images/waves-bottom.svg');
-                background-size: contain;
                 background-position: bottom;
                 position: absolute;
-                z-index: -1;
-                left: -15px;
+                bottom: -40px;
+                background-size: contain;
+                left: -1px;
                 width: 200%;
-                height: 100%;
-                background-repeat: no-repeat;
-                top: 4em;
+                height: 193px;
+                background-repeat: repeat-x;
+                z-index: -1;
             }
 
     figure{
         width: 100%;
         margin: auto;
+        text-align: center;
 
     .howto{
         padding:5px;
@@ -369,6 +379,9 @@ h4{
 figcaption{
     text-align: center;
     font-size: 1em;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    display: inline;
 }
 
 
@@ -382,7 +395,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         margin: auto;
-        width: 320px;
+        width: 90vw;
         border-radius: 3px;
         background-color: var(--color-bg);
         margin-bottom:20px;
@@ -421,6 +434,22 @@ figcaption{
 
     .rating{
         margin-left: 10px;
+
+        .stars-roland-dark{
+            display: none;
+        }
+
+        .stars-angrypom-dark{
+            display: none;
+        }
+
+        .stars-roland-light{
+            display: block;
+        }
+
+        .stars-angrypom-light{
+            display: block;
+        }
     }
 }
 
@@ -461,6 +490,21 @@ footer{
 /* ========================================== DARK THEME ========================================== */
 
 [data-theme="dark"]{
+
+    button{
+        cursor: pointer;
+        background: none;
+        border: none;
+
+        .moon{
+            display:none;
+        }
+
+        .sun{
+            display: block;
+        }
+    }
+
     .explanation:before{
         background: url('../assets/images/waves-top-dark.svg');
         background-position: bottom;
@@ -488,9 +532,9 @@ footer{
             background:url('../assets/images/border-top-dark.svg');
             background-position: bottom;
             position: absolute;
-            top: -108px;
-            background-size: contain;
-            left: -147px;
+            top: -199px;
+            background-size: cover;
+            left: -84px;
             width: 200%;
             height: 200px;
             z-index: -1;
@@ -501,29 +545,45 @@ footer{
         }
 
     .journey:before{
-                    background:url('../assets/images/border-bottom-dark.svg');
-                    background-size: contain;
-                    background-position: top;
-                    position: absolute;
-                    z-index: -1;
-                    top: -6em;
-                    left: -16em;
-                    width: 200%;
-                    height: 195px;
-                    background-repeat: no-repeat;
+        background:url('../assets/images/border-bottom-dark.svg');
+        background-size: contain;
+        background-position: top;
+        position: absolute;
+        z-index: -1;
+        top: -3em;
+        left: -18em;
+        width: 200%;
+        height: 200px;
+        background-repeat: no-repeat;
                 }
         
     .journey:after{
         background:url('../assets/images/waves-bottom-dark.svg');
-        background-size: contain;
         background-position: bottom;
         position: absolute;
-        z-index: -1;
-        left: -15px;
+        bottom: -40px;
+        background-size: contain;
+        left: -1px;
         width: 200%;
-        height: 100%;
-        background-repeat: no-repeat;
-        top: 4em;
+        height: 193px;
+        background-repeat: repeat-x;
+        z-index: -1;
+    }
+
+    .stars-roland-light{
+        display: none;
+    }
+
+    .stars-angrypom-light{
+        display: none;
+    }
+
+    .stars-roland-dark{
+        display: block;
+    }
+
+    .stars-angrypom-dark{
+        display: block;
     }
         
-    }
+}
