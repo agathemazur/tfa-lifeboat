@@ -246,6 +246,10 @@ h4{
         max-width: 100%;
         overflow-x: hidden;
     }
+
+    .mockup-dark{
+        display: none;
+    }
 }
 
 /* ========================================== SECTION GALLERY ========================================== */
@@ -282,9 +286,11 @@ h4{
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: white;
+    color: black;
     width:200px;
     height:360px;
+    box-shadow: 0px 0px 20px 5px rgba(222, 222, 222, 0.24);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -434,6 +440,10 @@ footer{
         color: var(--color-text);
         font-family: var(--font-text);
         font-size: 1em;
+
+        &:hover{
+            font-weight: bolder;
+        }
     }
 
     .current-year{
@@ -454,24 +464,66 @@ footer{
     .explanation:before{
         background: url('../assets/images/waves-top-dark.svg');
         background-position: bottom;
-        background-repeat: repeat-x;
+        position: absolute;
+        top: -120px;
         background-size: contain;
+        left: -1px;
+        width: 200%;
+        height: 193px;
+        background-repeat: repeat-x;
+        z-index: -1;
     }
 
     .mockup{
-        background: url('../assets/images/mockup-dark');
+        display: none;
+    }
+
+    .mockup-dark{
+        display: block;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .gallery:before{
             background:url('../assets/images/border-top-dark.svg');
+            background-position: bottom;
+            position: absolute;
+            top: -108px;
+            background-size: contain;
+            left: -147px;
+            width: 200%;
+            height: 200px;
+            z-index: -1;
+        }
+
+        .swiper-slide{
+            box-shadow: 0px 0px 20px 5px rgba(51, 51, 51, 0.24);
         }
 
     .journey:before{
                     background:url('../assets/images/border-bottom-dark.svg');
+                    background-size: contain;
+                    background-position: top;
+                    position: absolute;
+                    z-index: -1;
+                    top: -6em;
+                    left: -16em;
+                    width: 200%;
+                    height: 195px;
+                    background-repeat: no-repeat;
                 }
         
     .journey:after{
         background:url('../assets/images/waves-bottom-dark.svg');
+        background-size: contain;
+        background-position: bottom;
+        position: absolute;
+        z-index: -1;
+        left: -15px;
+        width: 200%;
+        height: 100%;
+        background-repeat: no-repeat;
+        top: 4em;
     }
         
     }

@@ -1,8 +1,13 @@
 "use strict";
 
+//Date
 var copyright = document.querySelector(".current-year");
 copyright.innerText = new Date().getFullYear();
 
+// 1. comment detecter que je passe en mobile
+// 2. changer le slideperview à 1
+
+//Swiper
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
