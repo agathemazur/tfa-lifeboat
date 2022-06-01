@@ -470,7 +470,8 @@ footer{
         font-family: var(--font-text);
         font-size: 1em;
 
-        &:hover{
+        &:hover,
+        &:focus{
             font-weight: bolder;
         }
     }
@@ -570,6 +571,9 @@ footer{
         z-index: -1;
     }
 
+    .rating{
+        margin-left: 10px;
+
     .stars-roland-light{
         display: none;
     }
@@ -585,5 +589,6 @@ footer{
     .stars-angrypom-dark{
         display: block;
     }
+}
         
 }
