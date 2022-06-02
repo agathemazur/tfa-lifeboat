@@ -319,9 +319,13 @@ h4{
 
   .swiper-slide img {
     display: block;
-    height: 70%;
+    height: 100px;
     object-fit: cover;
   }
+
+  .needmargin{
+    margin-bottom:1em;
+}
 
 /* ========================================== SECTION JOURNEY ========================================== */
 
@@ -549,7 +553,7 @@ footer{
         width: 200%;
         height: 200px;
         background-repeat: no-repeat;
-                }
+    }
         
     .journey:after{
         background:url('../assets/images/waves-bottom-dark.svg');
@@ -672,18 +676,33 @@ footer{
     }
 
     .gallery{
+        margin-bottom: 10em;
+        height: 70vh;
+        padding: 2em;
+        
         .swiper{
             width: 100%;
+            height: 100%;
+
+            .swiper-slide{
+                padding:3em;
+            }
+
+            img{
+                height:200px;
+            }
         }
     }
 
     .journey{
         height:90vh;
-        margin-bottom: 25em;
+        margin-bottom: 45em;
+        padding-top: 13em;
 
         .title--3{
             display: inline-block;
-            margin-bottom: 1.5em;
+            margin-bottom: 1em;
+            margin-left: 1.5em;
         }
 
         figure{
@@ -703,17 +722,28 @@ footer{
                 background-size: cover;
                 left: -84px;
                 width: 200%;
-                height: 407px;
+                height: 600px;
                 z-index: -1;
-        }
-
-        [data-theme="dark"]{
-            &:after{
-                background:url('../assets/images/waves-bottom-dark.svg');
-                bottom: -60px;
             }
-    }
-    }
+
+        }
+                [data-theme="dark"]{
+                    .journey{
+                        
+                        &:before{
+                            content: "";
+                            background:url('../assets/images/border-bottom-dark-desktop.svg');
+                            background-position: bottom;
+                            position: absolute;
+                            top: -318px;
+                            background-size: cover;
+                            left: -84px;
+                            width: 200%;
+                            height: 600px;
+                            z-index: -1;
+                        }
+                    }
+                }
 
     .end {
         height: 60vh;
