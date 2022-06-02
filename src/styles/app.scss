@@ -591,10 +591,157 @@ footer{
 
 @media (min-width: 1050px){
     .intro{
-        
-        h1{
-            text-align: left;
-            font-size: 48px;
+
+        .home{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
         }
+        h1{
+            margin-bottom: 5%;
+            align-self: center;
+            font-size: 48px;
+            width: 60%;
+            line-height: 67px;
+        }
+    }
+
+    .explanation{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        grid-template-areas: 
+        "mockup titre"
+        "mockup sous-titre"
+        "mockup sous-texte";
+        padding-bottom: 12em;
+
+        .title{
+            grid-area: titre;
+        }
+
+        .sous-titre{
+            grid-area: sous-titre;
+            text-align: right;
+        }
+
+        .sous-texte{
+            grid-area: sous-texte;
+        }
+
+        .mockup, .mockup-dark{
+            grid-area: mockup;
+            justify-self: center;
+            max-width: 50%;
+        }
+    }
+
+    .gallery{
+        
+        &:before{
+            content: "";
+            display: block;
+            background:url('../assets/images/border-top-desktop.svg');
+            background-position: bottom;
+            position: absolute;
+            top: -318px;
+            background-size: cover;
+            left: -84px;
+            width: 200%;
+            height: 407px;
+            z-index: -1;
+        }
+    }
+
+    [data-theme="dark"]{
+        .gallery{
+        
+            &:before{
+                content: "";
+                background:url('../assets/images/border-top-dark-desktop.svg');
+                background-position: bottom;
+                position: absolute;
+                top: -318px;
+                background-size: cover;
+                left: -84px;
+                width: 200%;
+                height: 407px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .journey{
+        height:90vh;
+        margin-bottom: 25em;
+
+        figure{
+            .howto{
+                width:80%;
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        }
+                &:before{
+                    content: "";
+                    background:url('../assets/images/border-bottom-desktop.svg');
+                    background-position: bottom;
+                    position: absolute;
+                    top: -318px;
+                    background-size: cover;
+                    left: -84px;
+                    width: 200%;
+                    height: 407px;
+                    z-index: -1;
+            }
+    }
+
+    .end {
+        height: 60vh;
+        
+        .reviews-container{
+        justify-content: space-between;
+        flex-direction: row;
+        
+        .reviews{
+            width: 30vw;
+            height: 20vh;
+        }
+
+        }
+
+    }
+
+    footer{
+
+        .left,.right{
+            display:grid;
+            grid-template-areas: 
+            "titre-footer agathe-mazur case-study"
+            ". dwt current-year";
+
+        .titre-footer{
+            grid-area: titre;
+        }
+
+        .agathe-mazur{
+            grid-area: agathe-mazur;
+        }
+
+        .case-study{
+            grid-area: case-study;
+        }
+        
+        .dwt{
+            grid-area: dwt;
+        }
+
+        .current-year{
+            grid-area: current-year;
+        }
+
+        }
+
     }
 }
