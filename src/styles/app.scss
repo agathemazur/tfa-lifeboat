@@ -351,7 +351,7 @@ h4{
                 background:url('../assets/images/waves-bottom.svg');
                 background-position: bottom;
                 position: absolute;
-                bottom: -40px;
+                bottom: -60px;
                 background-size: contain;
                 left: -1px;
                 width: 200%;
@@ -424,7 +424,7 @@ figcaption{
 }
 
 .end{
-    height: 100vh;
+    height: 80vh;
 }
 
 .you-rock{
@@ -555,7 +555,7 @@ footer{
         background:url('../assets/images/waves-bottom-dark.svg');
         background-position: bottom;
         position: absolute;
-        bottom: -40px;
+        bottom: -60px;
         background-size: contain;
         left: -1px;
         width: 200%;
@@ -671,9 +671,20 @@ footer{
         }
     }
 
+    .gallery{
+        .swiper{
+            width: 100%;
+        }
+    }
+
     .journey{
         height:90vh;
         margin-bottom: 25em;
+
+        .title--3{
+            display: inline-block;
+            margin-bottom: 1.5em;
+        }
 
         figure{
             .howto{
@@ -683,18 +694,25 @@ footer{
                 margin-bottom: 20px;
             }
         }
-                &:before{
-                    content: "";
-                    background:url('../assets/images/border-bottom-desktop.svg');
-                    background-position: bottom;
-                    position: absolute;
-                    top: -318px;
-                    background-size: cover;
-                    left: -84px;
-                    width: 200%;
-                    height: 407px;
-                    z-index: -1;
+            &:before{
+                content: "";
+                background:url('../assets/images/border-bottom-desktop.svg');
+                background-position: bottom;
+                position: absolute;
+                top: -318px;
+                background-size: cover;
+                left: -84px;
+                width: 200%;
+                height: 407px;
+                z-index: -1;
+        }
+
+        [data-theme="dark"]{
+            &:after{
+                background:url('../assets/images/waves-bottom-dark.svg');
+                bottom: -60px;
             }
+    }
     }
 
     .end {
@@ -707,38 +725,6 @@ footer{
         .reviews{
             width: 30vw;
             height: 20vh;
-        }
-
-        }
-
-    }
-
-    footer{
-
-        .left,.right{
-            display:grid;
-            grid-template-areas: 
-            "titre-footer agathe-mazur case-study"
-            ". dwt current-year";
-
-        .titre-footer{
-            grid-area: titre;
-        }
-
-        .agathe-mazur{
-            grid-area: agathe-mazur;
-        }
-
-        .case-study{
-            grid-area: case-study;
-        }
-        
-        .dwt{
-            grid-area: dwt;
-        }
-
-        .current-year{
-            grid-area: current-year;
         }
 
         }
