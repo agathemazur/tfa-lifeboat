@@ -24,8 +24,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-  "use strict";
-
 const darkTheme = document.querySelector(".btn--theme");
 
 //Gérer le data-theme du body
