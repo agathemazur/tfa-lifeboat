@@ -263,6 +263,7 @@ h4{
     .mockup-dark{
         display: none;
     }
+
 }
 
 /* ========================================== SECTION GALLERY ========================================== */
@@ -273,7 +274,39 @@ h4{
     position: relative;
     padding:0;
     z-index: 30;
-    
+
+    .nice{
+        font-weight: bolder;
+        background-color: var(--color-text);
+        color: var(--color-bg);
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .whatif{
+        font-weight: bolder;
+    }
+
+    figure{
+        text-align: center;
+
+        figcaption{
+            display: inline-block;
+        }
+    }
+
+    .first-para{
+        margin:3em;
+        }
+
+    .repeat{
+        margin: 2em;
+
+        &--third-para{
+            margin-left: 3em;
+        }
+    }
+
     &:before{
         content: "";
         display: block;
@@ -331,6 +364,16 @@ h4{
     margin-bottom:1em;
 }
 
+    .ditto{
+        max-width: 100%;
+        overflow-x: hidden;
+        margin-bottom: 1em;
+    }
+
+    .ditto-dark{
+        display: none;
+    }
+
 /* ========================================== SECTION JOURNEY ========================================== */
 
 .journey{
@@ -382,6 +425,15 @@ h4{
         box-shadow: 5px 5px 0px -1px #000000;
     }
 }
+
+    .howto{
+        padding:5px;
+        background: #FFFFFF;
+        border: 3px solid #000000;
+        border-radius: 5px;
+        width:100%;
+        box-shadow: 5px 5px 0px -1px #000000;
+    }
 }
 
 figcaption{
@@ -759,7 +811,6 @@ footer{
         
         .reviews{
             width: 30vw;
-            height: 20vh;
         }
 
         }
