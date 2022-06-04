@@ -179,12 +179,7 @@ h4{
 }
 
 .beforebutton{
-    font-family: var(--font-text);
-    text-align: center;
-    color: white;
-    margin-bottom: 2em;
-    font-weight: 400;
-    font-size: 16px;
+    display: none;
 }
 
 .title-reviews{
@@ -598,6 +593,10 @@ figcaption{
             display: block;
         }
     }
+}
+
+.margin{
+    margin-bottom: 3em;
 }
 
 /* ========================================== FOOTER ========================================== */
