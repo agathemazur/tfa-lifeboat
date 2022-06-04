@@ -178,6 +178,15 @@ h4{
     margin: 0;
 }
 
+.beforebutton{
+    font-family: var(--font-text);
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+    font-weight: 400;
+    font-size: 16px;
+}
+
 .title-reviews{
     color: var(--color-text);
 }
@@ -195,6 +204,15 @@ h4{
     &--case-study{
         height: 40vh;
     }
+}
+
+.figureintro{
+    text-align: center;
+}
+
+.figcaptionintro{
+    display: inline-block;
+    font-size: 14px;
 }
 
 .call-to-action{
